@@ -891,7 +891,7 @@ input[type="tel"],
 input[type="number"],
 select,
 textarea {
-  background: rgba(218, 255, 219, 0.5);
+  background-color: rgba(218, 255, 219, 0.5);
   border: 1px rgb(89, 156, 104) solid;
   border-radius: 5px;
   padding: 10px;
