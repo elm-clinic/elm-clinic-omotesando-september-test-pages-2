@@ -884,19 +884,7 @@ label {
   margin-bottom: 10px;
   display: block;
 }
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="tel"],
-input[type="number"],
-select,
-textarea {
-  background-color: rgba(218, 255, 219, 0.5);
-  border: 1px rgb(89, 156, 104) solid;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1rem;
-}
+
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -922,57 +910,16 @@ input[type="submit"] {
   color: red;
 }
 
-
-@media all and (-ms-high-contrast:none) {
-  #contact {
-    min-height: 100vh;
-    color:#000
-  }
-  
-  /* フォーム */
-  form div {
-    margin-bottom: 14px;
-  }
-  label {
-    font-size: 1.125rem;
-    margin-bottom: 10px;
-    display: block;
-  }
-  input[type="text"],
-  input[type="email"],
-  input[type="date"],
-  input[type="tel"],
-  input[type="number"],
-  select,
-  textarea {
-    background-color: rgba(218, 255, 219, 0.5);
-    border: 1px rgb(89, 156, 104) solid;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1rem;
-  }
-  input[type="text"],
-  input[type="email"],
-  input[type="date"],
-  input[type="tel"],
-  input[type="number"],
-  select {
-    width: 100%;
-    max-width: 240px;
-  }
-  
-  textarea {
-    width: 100%;
-    max-width: 480px;
-    height: 6rem;
-  }
-  input[type="submit"] {
-    border: none;
-    cursor: pointer;
-    line-height: 1;
-  }
-  
-  .necessary {
-    color: red;
-  }
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  background-color: rgba(218, 255, 219, 0.5);
+  border: 1px rgb(89, 156, 104) solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
 }
