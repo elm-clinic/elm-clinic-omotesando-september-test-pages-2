@@ -127,7 +127,7 @@
               </select>
             </fieldset> -->
 
-            <label>・ご希望の連絡方法</label>
+            <label>・ご希望の連絡方法 <span class="necessary">(必須)</span> </label>
             <br>
             <label><input type = "radio" name = "reply" value="お電話">&nbsp;お電話</label>
             <label><input type = "radio" name = "reply" value="メール" checked>&nbsp;メール</label>
@@ -164,8 +164,7 @@
 
             <label>・第１希望のお日にち <span class="necessary">(必須)</span></label>
             <p class="necessary">※ 当面の間、日・月曜日は休診日です！</p>
-            <input type="date" name = "desired_date_1" required="required">
-            
+            &emsp; <span class="necessary">→</span>&emsp; <input type="date" name = "desired_date_1">             
             <br><br>
             <fieldset>
               <label>・第１希望のお時間 <span class="necessary">(必須)</span></label>
@@ -198,7 +197,7 @@
 
               <label>・第２希望のお日にち (任意)</label>
               <p class="necessary">※ 当面の間、日・月曜日は休診日です！</p>
-              <input type="date" name = "desired_date_2">
+              &emsp; <span class="necessary">→</span>&emsp; <input type="date" name = "desired_date_2"> 
               <br><br>
               <fieldset>
                 <label>・第２希望のお時間 (任意)</label>
