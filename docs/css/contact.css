@@ -464,7 +464,6 @@ label {
   font-size: 1.125rem;
   margin-bottom: 10px;
   display: block;
-  
 }
 
 input[type="text"],
@@ -505,7 +504,6 @@ textarea {
   padding: 10px;
   font-size: 1rem;
 }
-
 
 .tiny {
   font-size: x-small;
