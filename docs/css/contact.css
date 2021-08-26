@@ -5,7 +5,7 @@ COLORS
 ================================================ */
 :root {
   --text: #333;
-  --bg: #ffe5ae;
+  --bg: radial-gradient(#ffe5ae, #ffffff);
   --video-opacity: 0.5;
 }
 @media (prefers-color-scheme: dark) {
@@ -508,3 +508,41 @@ textarea {
 .tiny {
   font-size: x-small;
 }
+
+/* アンドロイドフォーム */
+
+/* .Android input[type="text"],
+.Android input[type="email"],
+.Android input[type="date"],
+.Android input[type="tel"],
+.Android input[type="number"],
+.Android select {
+  width: 100%;
+  max-width: 240px;
+}
+
+.Android textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+
+.Android input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.Android input[type="text"],
+.Android input[type="email"],
+.Android input[type="date"],
+.Android input[type="tel"],
+.Android input[type="number"],
+.Android select,
+.Android textarea {
+  background-color: rgba(218, 255, 219, 0.5);
+  border: 1px rgb(89, 156, 104) solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+} */
