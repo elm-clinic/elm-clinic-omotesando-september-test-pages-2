@@ -757,3 +757,8 @@ textarea {
   padding: 10px;
   font-size: 1rem;
 }
+
+
+.tiny {
+  font-size: x-small;
+}
