@@ -138,116 +138,6 @@ DESKTOP SIZE
   }
 }
 
-/*========= ページトップのためのCSS ===============*/
-
-/*スクロールリンクの形状*/
-.scroll-top {
-  /*表示位置*/
-  position: fixed;
-  right: 20px;
-  bottom: 10px;
-  z-index: 2;
-  /*はじめは非表示*/
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s; /*それぞれに0.5秒の変化のアニメーション*/
-  /*縦書き*/
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  /*改行禁止*/
-  white-space: nowrap;
-  /*矢印の動き*/
-  animation: arrowmove 1s ease-in-out infinite;
-}
-
-@keyframes arrowmove {
-  0% {
-    bottom: 20px;
-  }
-  50% {
-    bottom: 25px;
-  }
-  100% {
-    bottom: 20px;
-  }
-}
-
-/*.scroll-viewクラスがついたら出現*/
-.scroll-top.scroll-view {
-  opacity: 1;
-  visibility: visible;
-}
-
-/*リンク全体の aタグの形状*/
-.scroll-top a {
-  text-decoration: none;
-  color: #666;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  display: block;
-}
-
-/*スクロールリンクの形状*/
-
-.js-scroll a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 1px;
-  height: 50px;
-  background: #666;
-}
-
-.js-scroll a::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  right: -6px;
-  width: 1px;
-  height: 20px;
-  background: #666;
-  transform: skewX(-31deg);
-}
-
-/*Edge IE11 hack*/
-_:-ms-lang(x),
-.js-scroll a::before {
-  right: -11px;
-}
-
-/*ページトップリンクの形状*/
-
-.js-pagetop a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 1px;
-  height: 50px;
-  background: #666;
-}
-
-.js-pagetop a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -6px;
-  width: 1px;
-  height: 20px;
-  background: #666;
-  transform: skewX(31deg);
-}
-
-/*Edge IE11 hack*/
-_:-ms-lang(x),
-.js-pagetop a::before {
-  right: 0;
-}
-
-@charset "utf-8";
-
 /*========= ぼかしのためのCSS ===============*/
 
 .mainblur {
@@ -371,69 +261,6 @@ _:-ms-lang(x),
   width: 30%;
 }
 
-/*==================================================
-スライダーのためのcss
-===================================*/
-
-/*画像の横幅を100%にしてレスポンシブ化*/
-img {
-  width: 100%;
-  height: auto;
-  vertical-align: bottom; /*画像の下にできる余白を削除*/
-}
-
-/*メイン画像下に余白をつける*/
-.gallery {
-  margin: 0 0 5px 0;
-}
-
-/*矢印の設定*/
-
-/*戻る、次へ矢印の位置*/
-.slick-prev,
-.slick-next {
-  position: absolute; /*絶対配置にする*/
-  z-index: 3;
-  top: 42%;
-  cursor: pointer; /*マウスカーソルを指マークに*/
-  outline: none; /*クリックをしたら出てくる枠線を消す*/
-  border-top: 2px solid #ccc; /*矢印の色*/
-  border-right: 2px solid #ccc; /*矢印の色*/
-  height: 25px;
-  width: 25px;
-}
-
-.slick-prev {
-  /*戻る矢印の位置と形状*/
-  left: 2.5%;
-  transform: rotate(-135deg);
-}
-
-.slick-next {
-  /*次へ矢印の位置と形状*/
-  right: 2.5%;
-  transform: rotate(45deg);
-}
-
-/*選択するサムネイル画像の設定*/
-
-.choice-btn li {
-  cursor: pointer;
-  outline: none;
-  background: #333;
-}
-
-.choice-btn li img {
-  opacity: 0.4; /*選択されていないものは透過40%*/
-}
-
-.choice-btn li.slick-current img {
-  opacity: 1; /*選択されているものは透過しない*/
-}
-
-.gray {
-  color: #666666;
-}
 
 /*==================================================
 アコーディオンのためのcss
@@ -584,89 +411,10 @@ iframe {
   margin-bottom: 0.3rem;
 }
 
-/*========= LoadingのためのCSS ===============*/
-
-/* Loading背景画面設定*/
-#splash {
-  /*fixedで全面に固定*/
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  background: rgb(222, 230, 157);
-  text-align: center;
-  color: #fff;
-}
-
-/* Loading画像中央配置*/
-#splash_logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Parisienne", cursive;
-}
-
-/* Loading アイコンの大きさ設定*/
-#splash_logo img {
-  width: 260px;
-}
-
-/* fadeUpをするアイコンの動き */
-
-.fadeUp {
-  animation-name: fadeUpAnime;
-  animation-duration: 2.1s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes fadeUpAnime {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 
 /*
 SPEAKERS
 ================================================ */
-#area-3 {
-	padding: 4rem 1rem;
-}
-
-.speakers-list {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: flex-start;
-	margin-bottom: 2rem;
-}
-.speakers-text {
-	margin-left: 1rem;
-}
-
-#area-3 h2 {
-background: linear-gradient(var(--orange), var(--pink));
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-text-fill-color: transparent;
-}
-
-#area-3 h3 {
-	font-size: 1.5rem;
-	margin-bottom: .5rem;
-}
-#area-3 img {
-	border-radius: 50%;
-	width: 20%;
-}
 
 .doctor-message {
 	color :red ;
@@ -696,7 +444,7 @@ form div {
   margin-bottom: 14px;
 }
 
-/* input[type="text"],
+input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="tel"],
@@ -710,7 +458,7 @@ select {
   border-radius: 0;
   font: inherit;
   outline: none;
-} */
+}
 
 label {
   font-size: 1.125rem;
